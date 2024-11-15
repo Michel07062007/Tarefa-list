@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Funnel Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: rgb(240, 240, 240);
+}
+
+header {
+    margin-top: 280px;
+    padding: 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+form {
+    text-align: center;
+    padding: 10px 0;
+}
+
+button {
+    background-color: #77ac1b;
+    border-color: #4e7c00;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+}
+
+input,
+button {
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
+ul {
+    display: block;
+}
+
+li {
+    cursor: pointer;
+    padding: 8px 0;
+}
+
+ul li {
+    list-style: inside;
+    padding: 8px;
+}
+
+form button:hover  {
+    background-color: #5c8b0c;
+}
