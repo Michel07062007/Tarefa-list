@@ -1,16 +1,17 @@
 
-$(document).ready(function() {
-    $('<div></div>').appendTo('form')
+$(document).ready(function() {    
     $('form').on('submit', function(e) {
         e.preventDefault();
+
         const respostaFormulario = $('#name-task').val()
         const novoItem = $(`<ul></ul>`)
+            
         $(`<li>${respostaFormulario}</li>`).appendTo(novoItem);
-        $(novoItem).appendTo('div')
+        $(novoItem).appendTo('form')
         $('#name-task').val('')
 
+        $('li').on('click', function() {
+            $(this).toggleClass('riscado');
+        });
     });
-    $('div').click(function(){
-        $('li').css('text-decoration', 'line-through');
-    })
-})
+});
